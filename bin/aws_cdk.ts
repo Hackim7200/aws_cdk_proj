@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 import * as cdk from "aws-cdk-lib";
-import { AwsCdkStack } from "../lib/aws_cdk-stack";
+
 import { PhotosStack } from "../lib/PhotosStack";
+import { PhotosHandlerStack } from "../lib/PhotosHandlerStack";
 
 const app = new cdk.App();
 // these are the stacks that will be added to cloudformation 
-new AwsCdkStack(app, "AwsCdkStack", {});
-new PhotosStack(app, "PhotosStack", {});
+new PhotosStack(app, "PhotosStack");
+new PhotosHandlerStack(app, "PhotosHandlerStack");
