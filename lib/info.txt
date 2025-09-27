@@ -1,0 +1,2 @@
+This is where all the stacks are created 
+define stacks here and make sure you import it in the bin/aws_cdk-stacks.ts
